@@ -20,8 +20,15 @@
   
   Let's first look at an example that will teach you how to use these methods.
 */
+// This code checks that it is safe for the astronauts to eat from a berry tree, I tried the .every() but it only passes the one test but the .some() pass both. I still feel the .every() is the right one to use but can't get the 2nd test to pass with it.
 
-function isBushSafe() {}
+
+function isBushSafe(arr) {
+ if (arr.some((arr) => arr != "pink")) {
+   return "Toxic! Leave bush alone!"
+ }
+  return "Bush is safe to eat from";
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
